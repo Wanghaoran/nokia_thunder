@@ -10,9 +10,11 @@ class IndexAction extends Action {
         //发送方帐号（一个OpenID）
         $fromUsername = $postObj->FromUserName;
         //开发者微信号
-        $toUsername = $postObj->ToUserName;
+        $toUsername = çç->ToUserName;
         //文本消息内容
         $keyword = trim($postObj->Content);
+        //消息类型
+        $Event = $postObj->Event;
         //返回消息模版
         $textTpl = "<xml>
                     <ToUserName><![CDATA[%s]]></ToUserName>
@@ -33,6 +35,11 @@ class IndexAction extends Action {
             echo $resultStr;
         //相反为事件推送
         }else{
+            //取消订阅事件不处理
+            if($Event == 'unsubscribe'){
+                echo '';
+                exit();
+            }
             $msgType = "text";
             $have = '';
             //已经领取过
