@@ -49,15 +49,20 @@ class IndexAction extends Action {
                 $contentStr = "哎哟，恭喜恭喜啊，你终于也关注诺基亚官方微信啦。这里可有很多关于诺基亚的资讯哦，直接回复“NOKIA”，来了解一下如何为你的手机定制专属信息吧。如果你想了解其它热
 销产品，就回复相关型号，小诺在这里包学包会包了解。";
             }
+            //已经领取过
+            $have = M('Key') -> field('key,time') -> where(array('openID' => md5($fromUsername))) -> find()
+            if($have){
+                $contentStr = '您已经于' . date('Y-m-d H:i:s', $have['time']) . '领取过激活码，激活码为：' . $have['key'];
+            }
             $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
             echo $resultStr;
         }
     }
 
         public function counts(){
-            $use = M('Key') -> where('openID <> ""') -> sum();
-            $nouse = M('Key') -> where('openID = ""') -> sum();
-            $this -> show('<h3>验证码已用：<span style="color: blue;">' . $use . '</span> 条，未用：<span style="color:red;">' . $nouse . '</span> 条</h3>');
+            $use = M('Key') -> where('openID <> ""') -> count();
+            $nouse = M('Key') -> where('openID = ""') -> count();
+            $this -> show('<h3>激活码已用：<span style="color: blue;">' . $use . '</span> 条，未用：<span style="color:red;">' . $nouse . '</span> 条</h3>');
         }
 
 }
