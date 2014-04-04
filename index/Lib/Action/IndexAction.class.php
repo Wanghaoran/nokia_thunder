@@ -37,7 +37,10 @@ class IndexAction extends Action {
             //读取激活码
             $key = M('Key') -> field('key') -> where('openID=""') -> find();
             //设置激活码为无效
-            M('Key') -> where(array('key' => $key['key'])) -> save(array('openID' => $fromUsername, 'time' => $time));
+            $save_data = array();
+            $save_data['openID'] = $fromUsername;
+            $save_data['time'] = $time;
+            M('Key') -> where(array('key' => $key['key'])) -> save($save_data);
             //王钰 和  我
             if($fromUsername == 'o-LOhjtv64tp_EHRZhUdUajBFayU' || $fromUsername == 'o-LOhjkS4YVgDRv9rtsQ9vg__sz4'){
                 $contentStr = '欢迎加入诺基亚官方微信！恭喜您获得迅雷电影院7天影视VIP体验卡（' . $key["key"] .'）！观影特权+服务特权的双重豪礼，给你VIP级别的超爽体验！最新最热门的高清大片，想怎么看就怎么看！';
