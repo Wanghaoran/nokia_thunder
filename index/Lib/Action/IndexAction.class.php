@@ -38,7 +38,7 @@ class IndexAction extends Action {
             $key = M('Key') -> field('id,key') -> where('openID=""') -> find();
             //设置激活码为无效
             $save_data = array();
-            $save_data['openID'] = $fromUsername;
+            $save_data['openID'] = md5($fromUsername);
             $save_data['time'] = $time;
             $save_data['id'] = $key['id'];
             M('Key') -> save($save_data);
