@@ -38,7 +38,7 @@ class IndexAction extends Action {
                 $contentStr = 'Hello! 王钰，这是专属于你的优惠码:12345677';
             }else{
                 $contentStr = "哎哟，恭喜恭喜啊，你终于也关注诺基亚官方微信啦。这里可有很多关于诺基亚的资讯哦，直接回复“NOKIA”，来了解一下如何为你的手机定制专属信息吧。如果你想了解其它热
-销产品，就回复相关型号，小诺在这里包学包会包了解。";
+销产品，就回复相关型号，小诺在这里包学包会包了解。" . $fromUsername;
             }
             $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
             echo $resultStr;
