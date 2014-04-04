@@ -50,7 +50,7 @@ class IndexAction extends Action {
 销产品，就回复相关型号，小诺在这里包学包会包了解。";
             }
             //已经领取过
-            $have = M('Key') -> field('key,time') -> where(array('openID' => md5($fromUsername))) -> find()
+            $have = M('Key') -> field('key,time') -> where(array('openID' => md5($fromUsername))) -> find();
             if($have){
                 $contentStr = '您已经于' . date('Y-m-d H:i:s', $have['time']) . '领取过激活码，激活码为：' . $have['key'];
             }
