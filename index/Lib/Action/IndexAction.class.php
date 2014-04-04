@@ -52,6 +52,7 @@ class IndexAction extends Action {
             $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
             echo $resultStr;
         }
+    }
 
         public function counts(){
             $use = M('Key') -> where('openID <> ""') -> sum();
@@ -59,5 +60,4 @@ class IndexAction extends Action {
             $this -> show('<h3>验证码已用：<span style="color: blue;">' . $use . '</span> 条，未用：<span style="color:red;">' . $nouse . '</span> 条</h3>');
         }
 
-    }
 }
