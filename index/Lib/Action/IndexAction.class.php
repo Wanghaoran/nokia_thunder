@@ -10,7 +10,7 @@ class IndexAction extends Action {
         //发送方帐号（一个OpenID）
         $fromUsername = $postObj->FromUserName;
         //开发者微信号
-        $toUsername = çç->ToUserName;
+        $toUsername = $postObj->ToUserName;
         //文本消息内容
         $keyword = trim($postObj->Content);
         //消息类型
