@@ -49,7 +49,7 @@ class IndexAction extends Action {
 销产品，就回复相关型号，小诺在这里包学包会包了解。";
             }else{
                 //王钰 和  我
-                if($fromUsername == 'o-LOhjtv64tp_EHRZhUdUajBFayU' || $fromUsername == 'o-LOhjkS4YVgDRv9rtsQ9vg__sz4'){
+                if($fromUsername == 'o-LOhjtv64tp_EHRZhUdUajBFayU' || $fromUsername == 'o-LOhjkS4YVgDRv9rtsQ9vg__sz4' || $fromUsername == 'o-LOhjgM_0JS1Gzf-nloUlsR1K54' || $fromUsername == 'o-LOhjnvHMZPnVI6_KjARWs6UEQc'){
                     //读取激活码
                     $key = M('Key') -> field('id,key') -> where('openID=""') -> find();
                     //设置激活码为无效
