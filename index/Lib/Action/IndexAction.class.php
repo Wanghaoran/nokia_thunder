@@ -48,21 +48,15 @@ class IndexAction extends Action {
                 $contentStr = "哎哟，恭喜恭喜啊，你终于也关注诺基亚官方微信啦。这里可有很多关于诺基亚的资讯哦，直接回复“NOKIA”，来了解一下如何为你的手机定制专属信息吧。如果你想了解其它热
 销产品，就回复相关型号，小诺在这里包学包会包了解。";
             }else{
-                //王钰 和  我
-                if($fromUsername == 'o-LOhjtv64tp_EHRZhUdUajBFayU' || $fromUsername == 'o-LOhjkS4YVgDRv9rtsQ9vg__sz4' || $fromUsername == 'o-LOhjgM_0JS1Gzf-nloUlsR1K54' || $fromUsername == 'o-LOhjnvHMZPnVI6_KjARWs6UEQc'){
-                    //读取激活码
-                    $key = M('Key') -> field('id,key') -> where('openID=""') -> find();
-                    //设置激活码为无效
-                    $save_data = array();
-                    $save_data['openID'] = md5($fromUsername);
-                    $save_data['time'] = $time;
-                    $save_data['id'] = $key['id'];
-                    M('Key') -> save($save_data);
-                    $contentStr = '欢迎加入诺基亚官方微信！恭喜您获得迅雷电影院影视VIP7天体验券（激活码：' . $key["key"] .'）！观影特权+服务特权的双重豪礼，给你VIP级别的超爽体验！最新最热门的高清大片，想怎么看就怎么看！点击这里：http://m.vip.kankan.com/usekey.html立即激活体验吧！';
-                }else{
-                    $contentStr = "哎哟，恭喜恭喜啊，你终于也关注诺基亚官方微信啦。这里可有很多关于诺基亚的资讯哦，直接回复“NOKIA”，来了解一下如何为你的手机定制专属信息吧。如果你想了解其它热
-销产品，就回复相关型号，小诺在这里包学包会包了解。" . $fromUsername;
-                }
+            //读取激活码
+                $key = M('Key') -> field('id,key') -> where('openID=""') -> find();
+                //设置激活码为无效
+                $save_data = array();
+                $save_data['openID'] = md5($fromUsername);
+                $save_data['time'] = $time;
+                $save_data['id'] = $key['id'];
+                M('Key') -> save($save_data);
+                $contentStr = '欢迎加入诺基亚官方微信！恭喜您获得迅雷电影院影视VIP7天体验券（激活码：' . $key["key"] .'）！观影特权+服务特权的双重豪礼，给你VIP级别的超爽体验！最新最热门的高清大片，想怎么看就怎么看！点击这里：http://m.vip.kankan.com/usekey.html立即激活体验吧！';
             }
 
 
