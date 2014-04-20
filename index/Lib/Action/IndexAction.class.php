@@ -30,7 +30,7 @@ class IndexAction extends Action {
         //有关键词的是消息推送
         if(!empty($keyword)){
             $msgType = "text";
-            $contentStr = "诺基亚官方微信建设中....";
+            $contentStr = "诺基亚官方微信建设中....<a href='http://www.baidu.com'>百度</a>";
             $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
             echo $resultStr;
         //相反为事件推送
