@@ -45,8 +45,7 @@ class IndexAction extends Action {
             //已经领取过
             $have = M('Key') -> field('key,time') -> where(array('openID' => md5($fromUsername))) -> find();
             if($have){
-                $contentStr = "哎哟，恭喜恭喜啊，你终于也关注诺基亚官方微信啦。这里可有很多关于诺基亚的资讯哦，直接回复“NOKIA”，来了解一下如何为你的手机定制专属信息吧。如果你想了解其它热
-销产品，就回复相关型号，小诺在这里包学包会包了解。";
+                $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3. 缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
             }else{
             //读取激活码
                 $key = M('Key') -> field('id,key') -> where('openID=""') -> find();
@@ -57,6 +56,11 @@ class IndexAction extends Action {
                 $save_data['id'] = $key['id'];
                 M('Key') -> save($save_data);
                 $contentStr = '欢迎加入诺基亚官方微信！恭喜您获得迅雷电影院影视VIP7天体验券（激活码：' . $key["key"] .'）！观影特权+服务特权的双重豪礼，给你VIP级别的超爽体验！最新最热门的高清大片，想怎么看就怎么看！点击这里：http://m.vip.kankan.com/usekey.html立即激活体验吧！';
+
+                //激活码送完了
+                if(!$key){
+                    $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3. 缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
+                }
             }
 
 
