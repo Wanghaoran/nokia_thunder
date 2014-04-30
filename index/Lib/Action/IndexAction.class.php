@@ -94,6 +94,26 @@ class IndexAction extends Action {
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
                 break;
 
+                case '2':
+                    $msgType = 'news';
+                    $ArticleCount = 1;
+                    $Title = '本周LumiaAPP精彩回顾';
+                    $Description = '精彩TOP3：1.Glean；２．暴走日报；3.YY';
+                    $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvTtZspRUpibKHuJFnIfyFsts5GHdLreFdCefC3OqibzvGibsfBNCPNs3fDicfY2xyBSO4tzjwoByiaibHg/0';
+                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200348499&idx=1&sn=493eca6c99104ed08f171d670e544871#rd';
+                    $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                break;
+
+                case '3':
+                    $msgType = 'news';
+                    $ArticleCount = 1;
+                    $Title = '焕•聚LUMIA欢乐校园行—最新校园行活动公告！';
+                    $Description = '与专业讲师近距离交流，参与精彩有趣的互动，就在欢乐校园行！';
+                    $PicUrl = 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EuvqbKQoTH6gpAg6ViahXj3COsIsvmUqu5gnwwdVWbtyqQ8xibS6p1g0aydg3elmde7JUcKgtHjDjcg/0';
+                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200348527&idx=1&sn=4c265e5bbd56aa1ab4988dd3f387da7a#rd';
+                    $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                    break;
+
                 default:
                     $msgType = 'text';
                     $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3. 缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
