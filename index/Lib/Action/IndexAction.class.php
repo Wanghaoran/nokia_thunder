@@ -53,7 +53,7 @@ class IndexAction extends Action {
                     $contentStr = "四大系列，精彩各不相同！最想了解哪个呢？a. Lumia非凡系列 b. 诺基亚Asha新趣系列 c. 诺基亚X系列 d. 实用经典系列（回复a,b,c,d,即可）";
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 break;
-                case '2':
+                case 'a':
                     $msgType = 'news';
                     $ArticleCount = 1;
                     $Title = 'Lumia非凡系列—诺基亚Lumia1520，让生活大有可言！';
