@@ -46,6 +46,7 @@ class IndexAction extends Action {
 
         //有关键词的是消息推送
         if(!empty($keyword)){
+            $keyword = strtolower($keyword);
 
             switch($keyword){
                 case '1':
