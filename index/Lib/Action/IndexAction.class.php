@@ -25,8 +25,8 @@ class IndexAction extends Action {
                     <FuncFlag>0</FuncFlag>
                     </xml>";
 
-        //返回图文消息模版
-        $textNews = "<xml>
+        //返回图文消息模版 - 一条消息
+        $textNews_one = "<xml>
                      <ToUserName><![CDATA[%s]]></ToUserName>
                      <FromUserName><![CDATA[%s]]></FromUserName>
                      <CreateTime>%s</CreateTime>
@@ -53,6 +53,16 @@ class IndexAction extends Action {
                     $contentStr = "四大系列，精彩各不相同！最想了解哪个呢？a. Lumia非凡系列 b. 诺基亚Asha新趣系列 c. 诺基亚X系列 d. 实用经典系列（回复a,b,c,d,即可）";
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 break;
+                case '2':
+                    $msgType = 'news';
+                    $ArticleCount = 1;
+                    $Title = 'Lumia非凡系列—诺基亚Lumia1520，让生活大有可言！';
+                    $Description = '绝对震撼你的Lumia1520，完美你的工作与生活~';
+                    $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9GRiaZmYMskGsynpCeS1HZpby2LHOZPr8VJHYjVrtSwpiagSADwyctQdjg/0';
+                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364162&idx=1&sn=e6dbc827a0ce6d5d841ce8f3f8436853#rd';
+                    $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                    break;
+
                 default:
                     $msgType = 'text';
                     $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3. 缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
