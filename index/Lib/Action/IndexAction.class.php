@@ -49,7 +49,7 @@ class IndexAction extends Action {
         if($MsgType == 'image'){
 
             $msgType = 'text';
-            $contentStr = "感谢您参与活动，恭喜您已成功获得诺基亚天猫专卖店Ｌｕｍｉａ６３０双卡双待购机５０元优惠券，立刻领取吧！（领取方式：长按“优惠券”复制链接，再粘贴到手机浏览器中打开）";
+            $contentStr = "感谢您参与活动，恭喜您已成功获得<a href='http://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1115574360&activityId=123562012'>诺基亚天猫专卖店Ｌｕｍｉａ６３０双卡双待购机５０元优惠券</a>，立刻领取吧！（领取方式：长按“优惠券”复制链接，再粘贴到手机浏览器中打开）";
             $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
             echo $resultStr;
             exit();
