@@ -13,6 +13,7 @@ class IndexAction extends Action {
         $toUsername = $postObj->ToUserName;
         //文本消息内容
         $keyword = trim($postObj->Content);
+        $MsgType = strval($postObj -> MsgType);
         //消息类型
         $Event = $postObj->Event;
         //返回消息模版
@@ -43,6 +44,17 @@ class IndexAction extends Action {
                      </xml>";
 
         $time = time();
+
+
+        if($MsgType == 'image'){
+
+            $msgType = 'text';
+            $contentStr = "感谢您参与活动，恭喜您已成功获得诺基亚天猫专卖店Ｌｕｍｉａ６３０双卡双待购机５０元优惠券，立刻领取吧！（领取方式：长按“优惠券”复制链接，再粘贴到手机浏览器中打开）";
+            $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
+            echo $resultStr;
+            exit();
+
+        }
 
         //有关键词的是消息推送
         if(!empty($keyword)){
