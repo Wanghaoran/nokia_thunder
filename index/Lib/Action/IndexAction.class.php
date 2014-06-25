@@ -124,10 +124,10 @@ class IndexAction extends Action {
                 case '3':
                     $msgType = 'news';
                     $ArticleCount = 1;
-                    $Title = '焕•聚LUMIA欢乐校园行—最新校园行活动公告！';
-                    $Description = '与专业讲师近距离交流，参与精彩有趣的互动，就在欢乐校园行！';
-                    $PicUrl = 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EuvqbKQoTH6gpAg6ViahXj3COsIsvmUqu5gnwwdVWbtyqQ8xibS6p1g0aydg3elmde7JUcKgtHjDjcg/0';
-                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200348527&idx=1&sn=4c265e5bbd56aa1ab4988dd3f387da7a#rd';
+                    $Title = '诺基亚XL跨界合作4大APP游戏，给你意想不到的精彩！';
+                    $Description = '参与有趣的跨界游戏，均有诺基亚XL作为大奖送出！【详细信息请点击查看】';
+                    $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Eua4g3CDXmyicib1eDpuiasFOc0qc66OkA0Ix4LzCC3KqUbNPe9sJXDibeua6XH63eIcq2oXzMYbZyoNA/0';
+                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200575341&idx=1&sn=4b91f2dd3f351e3ea7194ac4385c10fc#rd';
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
                     break;
 
