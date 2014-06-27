@@ -135,8 +135,19 @@ class IndexAction extends Action {
                     $msgType = 'text';
                     $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3. 缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
-
             }
+
+
+
+
+            //诺基亚影院行活动监测
+
+            if(strpos($keyword, '诺基亚影院行') !== false){
+                $msgType = 'text';
+                $contentStr = "诺基亚影院行活动测试中...";
+                $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
+            }
+
             echo $resultStr;
         //相反为事件推送
         }else{
