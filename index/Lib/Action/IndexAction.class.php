@@ -48,6 +48,26 @@ class IndexAction extends Action {
 
         if($MsgType == 'image'){
 
+            $Status = M('Status');
+            $openid = strval($fromUsername);
+            $where = array();
+            $where['openid'] = $openid;
+            $where['status'] = 1;
+            //查询是否标记
+            if($result = $Status -> field('id') -> where($where) -> find()){
+                $msgType = 'text';
+                $contentStr = '感谢您参与活动，恭喜您已成功获得<a href="http://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1115574360&activityId=130552231">诺基亚天猫专卖店Lumia 630双卡双待购机50元优惠券</a>和<a href="http://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=202226971&activityId=130482478">诺基亚XL购机50元优惠券</a>，立即领取吧！（领取方式：请您点击优惠券并根据提示复制链接，再粘贴到手机浏览器中打开即可使用）';
+                $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
+
+                //删除标记
+                $Status -> delete($result['id']);
+
+                //发送消息
+                echo $resultStr;
+                exit();
+            }
+
+
             $num = file_get_contents('./num.text');
             $num ++;
             file_put_contents('./num.text', $num);
