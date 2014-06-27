@@ -141,10 +141,25 @@ class IndexAction extends Action {
 
 
             //诺基亚影院行活动监测
-
             if(strpos($keyword, '诺基亚影院行') !== false){
+                //记录openid
+                $openid = strval($fromUsername);
+                $Status = M('Status');
+                $where = array();
+                $where['openid'] = $openid;
+                if($Status -> where($where) -> find()){
+                    $contentStr = "欢迎您参加诺基亚影院行活动！请发送您的图片给我们，之后您将获得相应的优惠券！";
+                }else{
+                    $data = array();
+                    $data['openid'] = $openid;
+                    $data['status'] = 1;
+                    if($Status -> add($data)){
+                        $contentStr = "欢迎您参加诺基亚影院行活动！请发送您的图片给我们，之后您将获得相应的优惠券！";
+                    }else{
+                        $contentStr = "服务器开小差了，请您稍后再试哦！";
+                    }
+                }
                 $msgType = 'text';
-                $contentStr = "诺基亚影院行活动测试中...";
                 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
             }
 
