@@ -119,6 +119,22 @@ class IndexAction extends Action {
                 break;
 
                 case 'b':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚503 小身材 大智慧',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNBo4nhxbnuxBtt98e1huD8nAPoiaib8SB1ibEbjNv8ibicQal5F6EibUcYoog/0',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806717&idx=1&sn=394403cda220c3a21422f83bc5a7211e#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNR4YnE9luNibkQ5riczgjicZWqiajYvc5eWDdTezhhEUf1kGUpqJMfHib6xw/640',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806717&idx=2&sn=40e03a269aa412720896d2c4b9c8a6b3#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    /*
                     $msgType = 'news';
                     $ArticleCount = 1;
                     $Title = '诺基亚Asha新趣系列—拥有丰富功能的Asha 503，一点都不简单！';
@@ -126,9 +142,11 @@ class IndexAction extends Action {
                     $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9G9kcMBnXDatLuS2uTgVMzL5UnUvh3DmHLiahrjfB9YSk7UV583XONvNA/0';
                     $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364158&idx=1&sn=f54c0a568423497ee767bad5a0c60ceb#rd';
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                    */
                 break;
 
                 case 'c':
+                    /*
                     $msgType = 'news';
                     $ArticleCount = 1;
                     $Title = '诺基亚X系列—体验流畅的跨界体验，就拥有 Nokia X吧！';
@@ -136,9 +154,41 @@ class IndexAction extends Action {
                     $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9GOicmHGkn9fFGBUzswuevIXqPYZJKzQLwYTt44De6WDCKAeddheicGAvw/0';
                     $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364160&idx=1&sn=7990df46e08cffa61db45a3f4f76bb7c#rd';
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                    */
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚XL 4G 跨界而来',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNXLmzSOlLTlsJEFFav5YIeCwjS8aCCWSibqWDqNO8QX5FtLXnL4R22sA/0',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806623&idx=1&sn=2880e20ca78be25cbb8ac88daef24447#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNTGDHhFxYQlC49DORKaMYHkticxCRsPwBNa1qPHjs2WerVicCmtuHujEQ/640',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806623&idx=2&sn=535893af28f29b92eb05699a174d61cd#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
                 break;
 
                 case 'd':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚225 双卡双待',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cN7XwqR7icQPPjibibk1GQhTgLwQCK4HuTZpfTbKvibDGibQyHZ5t2s2EdUEQ/0',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=1&sn=18401294f13527b96b11bf9466901236#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNBBgX6jah2uNZsldUDiaCVJ7Nl1P9fggJAJ6OWPb3aZiczwwkACVG8w2Q/640',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=2&sn=af1039cbd1ac640032389fd3d3b05c97#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    /*
                     $msgType = 'news';
                     $ArticleCount = 1;
                     $Title = '实用经典系列—诺基亚301，让你精彩多多，乐趣多多。';
@@ -146,6 +196,7 @@ class IndexAction extends Action {
                     $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9GQ23hhIITicXLcX6Nf4umPGVibX90icJAPKNlJSF6ribNp6cp5bzBiaqb3oQ/0';
                     $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364164&idx=1&sn=1ef6debcf590d0e54947f5df88b09fbe#rd';
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                    */
                 break;
 
                 case '2':
