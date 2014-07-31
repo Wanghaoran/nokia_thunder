@@ -92,6 +92,22 @@ class IndexAction extends Action {
                 break;
 
                 case 'a':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚LUMIA638 4G',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNnahIHMzibib86uic19HUsM81lBaBrBMibov6edh2WgKPnkSxm4oQrRj1DQ/640',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=1&sn=bf0a271c79ed7ae0a84a0b2ce091d356#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNr3T9YU5Rg88Zg4bYGxp8rs7QBZcKwWNVmjgZ05zUWuLn2cicUR2FuAw/640',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=2&sn=373821cfe9a7071dc8afa2d06aa3cf49#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    /*
                     $msgType = 'news';
                     $ArticleCount = 1;
                     $Title = 'Lumia非凡系列—诺基亚Lumia1520，让生活大有可言！';
@@ -99,6 +115,7 @@ class IndexAction extends Action {
                     $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9GRiaZmYMskGsynpCeS1HZpby2LHOZPr8VJHYjVrtSwpiagSADwyctQdjg/0';
                     $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364162&idx=1&sn=e6dbc827a0ce6d5d841ce8f3f8436853#rd';
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                    */
                 break;
 
                 case 'b':
@@ -149,6 +166,11 @@ class IndexAction extends Action {
                     $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Eua4g3CDXmyicib1eDpuiasFOc0qc66OkA0Ix4LzCC3KqUbNPe9sJXDibeua6XH63eIcq2oXzMYbZyoNA/0';
                     $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200575341&idx=1&sn=4b91f2dd3f351e3ea7194ac4385c10fc#rd';
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
+                    break;
+                case '我是帮友':
+                    $msgType = 'text';
+                    $contentStr = "活动还未上线，敬请期待。。。";
+                    $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                     break;
 
                 default:
@@ -210,7 +232,7 @@ class IndexAction extends Action {
 
                 //激活码送完了
                 if(!$key){
-                    $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3. 缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
+                    $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3.缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
                 }
             }
 
@@ -225,5 +247,32 @@ class IndexAction extends Action {
             $nouse = M('Key') -> where('openID = ""') -> count();
             $this -> show('<h3>激活码已用：<span style="color: blue;">' . $use . '</span> 条，未用：<span style="color:red;">' . $nouse . '</span> 条</h3>');
         }
+
+    //回复图文消息
+    public function responseNews($toUserName, $fromUserName, $Articles){
+        $textTpl = "<xml>
+                    <ToUserName><![CDATA[" . $fromUserName . "]]></ToUserName>
+                    <FromUserName><![CDATA[" . $toUserName . "]]></FromUserName>
+                    <CreateTime>" . time() . "</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>" . count($Articles) . "</ArticleCount>
+                    <Articles>";
+
+        foreach($Articles as $value){
+            $textTpl .= "<item>
+                         <Title><![CDATA[" . $value['title'] . "]]></Title>
+                         <Description><![CDATA[" . $value['description'] . "]]></Description>
+                         <PicUrl><![CDATA[" . $value['picurl'] . "]]></PicUrl>
+                         <Url><![CDATA[" . $value['url'] . "]]></Url>
+                         </item>";
+        }
+
+        $textTpl .= "</Articles>
+                     </xml>";
+
+        echo $textTpl;
+        exit;
+
+    }
 
 }
