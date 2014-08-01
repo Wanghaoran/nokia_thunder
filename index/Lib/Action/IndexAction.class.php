@@ -123,13 +123,13 @@ class IndexAction extends Action {
                         array(
                             'title' => '诺基亚503 小身材 大智慧',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNBo4nhxbnuxBtt98e1huD8nAPoiaib8SB1ibEbjNv8ibicQal5F6EibUcYoog/0',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/3.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806717&idx=1&sn=394403cda220c3a21422f83bc5a7211e#rd',
                         ),
                         array(
                             'title' => '参数配置',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNR4YnE9luNibkQ5riczgjicZWqiajYvc5eWDdTezhhEUf1kGUpqJMfHib6xw/640',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/4.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806717&idx=2&sn=40e03a269aa412720896d2c4b9c8a6b3#rd',
                         ),
                     );
@@ -159,13 +159,13 @@ class IndexAction extends Action {
                         array(
                             'title' => '诺基亚XL 4G 跨界而来',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNXLmzSOlLTlsJEFFav5YIeCwjS8aCCWSibqWDqNO8QX5FtLXnL4R22sA/0',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/5.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806623&idx=1&sn=2880e20ca78be25cbb8ac88daef24447#rd',
                         ),
                         array(
                             'title' => '参数配置',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNTGDHhFxYQlC49DORKaMYHkticxCRsPwBNa1qPHjs2WerVicCmtuHujEQ/640',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/6.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806623&idx=2&sn=535893af28f29b92eb05699a174d61cd#rd',
                         ),
                     );
@@ -177,13 +177,13 @@ class IndexAction extends Action {
                         array(
                             'title' => '诺基亚225 双卡双待',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cN7XwqR7icQPPjibibk1GQhTgLwQCK4HuTZpfTbKvibDGibQyHZ5t2s2EdUEQ/0',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/7.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=1&sn=18401294f13527b96b11bf9466901236#rd',
                         ),
                         array(
                             'title' => '参数配置',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNBBgX6jah2uNZsldUDiaCVJ7Nl1P9fggJAJ6OWPb3aZiczwwkACVG8w2Q/640',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/8.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=2&sn=af1039cbd1ac640032389fd3d3b05c97#rd',
                         ),
                     );
