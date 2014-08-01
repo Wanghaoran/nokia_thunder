@@ -205,6 +205,24 @@ class IndexAction extends Action {
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
                     break;
 
+                case '1520':
+                case 'lumia1520':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚LUMIA1520 大有可言',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/9.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200810263&idx=1&sn=2653c9960cfd08da4dcfe3522913c06b#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/10.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200810263&idx=2&sn=038d938a542c09d2518379a8f416c533#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    break;
 
                 case '我是帮友':
                     $msgType = 'text';
