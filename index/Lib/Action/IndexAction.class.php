@@ -186,8 +186,8 @@ class IndexAction extends Action {
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
                     break;
 
-                case 'LUMIA638':
                 case '638':
+                case 'LUMIA638':
                     $Articles = array(
                         array(
                             'title' => '诺基亚LUMIA638 4G',
