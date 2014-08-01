@@ -226,7 +226,7 @@ class IndexAction extends Action {
 
                 case 'x':
                 case 'nokia x':
-                case '诺基亚x':
+//                case '诺基亚x':
                     $Articles = array(
                         array(
                             'title' => ' 诺基亚 X 快速开启 Android应用',
