@@ -96,13 +96,13 @@ class IndexAction extends Action {
                         array(
                             'title' => '诺基亚LUMIA638 4G',
                             'description' => '',
-                            'picurl' => 'https://mp.weixin.qq.com/cgi-bin/getimgdata?mode=large&source=file&fileId=200809703&token=1297671367&lang=zh_CN',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/1.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=1&sn=bf0a271c79ed7ae0a84a0b2ce091d356#rd',
                         ),
                         array(
                             'title' => '参数配置',
                             'description' => '',
-                            'picurl' => 'https://mp.weixin.qq.com/cgi-bin/getimgdata?mode=large&source=file&fileId=200809741%3E&token=1297671367&lang=zh_CN',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/2.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=2&sn=373821cfe9a7071dc8afa2d06aa3cf49#rd',
                         ),
                     );
