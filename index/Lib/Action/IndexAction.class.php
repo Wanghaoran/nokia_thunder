@@ -267,7 +267,7 @@ class IndexAction extends Action {
 
                 case '503':
                 case '诺基亚503':
-                case 'nokia 503':
+                case 'nokia503':
                     $Articles = array(
                         array(
                             'title' => '诺基亚503 小身材 大智慧',
@@ -280,6 +280,26 @@ class IndexAction extends Action {
                             'description' => '',
                             'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/4.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806717&idx=2&sn=40e03a269aa412720896d2c4b9c8a6b3#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    break;
+
+                case '1080':
+                case '诺基亚1080':
+                case 'nokia1080':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚1080 双卡双待',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/13.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200810093&idx=1&sn=c98b214a7e6a707691fbc18d6cc95947#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/14.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200810093&idx=2&sn=4c8b9a062a1a0f1fb80b46292ac87ee0#rd',
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
