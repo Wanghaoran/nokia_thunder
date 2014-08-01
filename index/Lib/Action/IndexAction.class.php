@@ -305,6 +305,26 @@ class IndexAction extends Action {
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
                     break;
 
+                case '225':
+                case '诺基亚225':
+                case 'nokia225':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚225 双卡双待',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/7.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=1&sn=18401294f13527b96b11bf9466901236#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/8.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=2&sn=af1039cbd1ac640032389fd3d3b05c97#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    break;
+
                 case '我是帮友':
                     $msgType = 'text';
                     $contentStr = "活动还未上线，敬请期待。。。";
