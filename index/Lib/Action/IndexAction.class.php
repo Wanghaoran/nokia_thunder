@@ -226,7 +226,7 @@ class IndexAction extends Action {
 
                 case 'x':
                 case 'nokia x':
-//                case '诺基亚x':
+                case '诺基亚x':
                     $Articles = array(
                         array(
                             'title' => ' 诺基亚 X 快速开启 Android应用',
@@ -239,6 +239,27 @@ class IndexAction extends Action {
                             'description' => '',
                             'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/12.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200810346&idx=2&sn=39c02cc25624ec04c336ede5721e09c3#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    break;
+
+                case '诺基亚xl4g':
+                case '诺基亚xl':
+                case 'xl':
+                case 'xl4g':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚XL 4G 跨界而来',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/5.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806623&idx=1&sn=2880e20ca78be25cbb8ac88daef24447#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/6.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806623&idx=2&sn=535893af28f29b92eb05699a174d61cd#rd',
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
