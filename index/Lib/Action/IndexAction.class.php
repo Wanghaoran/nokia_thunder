@@ -185,6 +185,27 @@ class IndexAction extends Action {
                     $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200575341&idx=1&sn=4b91f2dd3f351e3ea7194ac4385c10fc#rd';
                     $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
                     break;
+
+                case 'LUMIA638':
+                case '638':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚LUMIA638 4G',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/1.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=1&sn=bf0a271c79ed7ae0a84a0b2ce091d356#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/2.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=2&sn=373821cfe9a7071dc8afa2d06aa3cf49#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    break;
+
+
                 case '我是帮友':
                     $msgType = 'text';
                     $contentStr = "活动还未上线，敬请期待。。。";
