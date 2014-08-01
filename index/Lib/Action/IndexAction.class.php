@@ -96,13 +96,13 @@ class IndexAction extends Action {
                         array(
                             'title' => '诺基亚LUMIA638 4G',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNnahIHMzibib86uic19HUsM81lBaBrBMibov6edh2WgKPnkSxm4oQrRj1DQ/640',
+                            'picurl' => 'https://mp.weixin.qq.com/cgi-bin/getimgdata?mode=large&source=file&fileId=200809703&token=1297671367&lang=zh_CN',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=1&sn=bf0a271c79ed7ae0a84a0b2ce091d356#rd',
                         ),
                         array(
                             'title' => '参数配置',
                             'description' => '',
-                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtX3M1FKfviaIwtR5kwS93cNr3T9YU5Rg88Zg4bYGxp8rs7QBZcKwWNVmjgZ05zUWuLn2cicUR2FuAw/640',
+                            'picurl' => 'https://mp.weixin.qq.com/cgi-bin/getimgdata?mode=large&source=file&fileId=200809741%3E&token=1297671367&lang=zh_CN',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806259&idx=2&sn=373821cfe9a7071dc8afa2d06aa3cf49#rd',
                         ),
                     );
