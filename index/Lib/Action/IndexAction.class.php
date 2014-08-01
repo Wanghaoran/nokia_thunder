@@ -87,7 +87,7 @@ class IndexAction extends Action {
             switch($keyword){
                 case '1':
                     $msgType = 'text';
-                    $contentStr = "四大系列，精彩各不相同！最想了解哪个呢？a. Lumia非凡系列 b. 诺基亚Asha新趣系列 c. 诺基亚X系列 d. 实用经典系列（回复a,b,c,d,即可）";
+                    $contentStr = "四大系列，精彩各不相同！最想了解哪个呢？a. Lumia非凡系列 b. 诺基亚Asha新趣系列 c. 诺基亚X系列 d. 实用经典系列 e. 输入产品型号直接查看产品信息（回复a,b,c,d,e即可）";
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 break;
 
@@ -107,17 +107,7 @@ class IndexAction extends Action {
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
-                    /*
-                    $msgType = 'news';
-                    $ArticleCount = 1;
-                    $Title = 'Lumia非凡系列—诺基亚Lumia1520，让生活大有可言！';
-                    $Description = '绝对震撼你的Lumia1520，完美你的工作与生活~';
-                    $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9GRiaZmYMskGsynpCeS1HZpby2LHOZPr8VJHYjVrtSwpiagSADwyctQdjg/0';
-                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364162&idx=1&sn=e6dbc827a0ce6d5d841ce8f3f8436853#rd';
-                    $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
-                    */
                 break;
-
                 case 'b':
                     $Articles = array(
                         array(
@@ -134,27 +124,8 @@ class IndexAction extends Action {
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
-                    /*
-                    $msgType = 'news';
-                    $ArticleCount = 1;
-                    $Title = '诺基亚Asha新趣系列—拥有丰富功能的Asha 503，一点都不简单！';
-                    $Description = '小身材，大智慧。Asha 503展现精致魅力！';
-                    $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9G9kcMBnXDatLuS2uTgVMzL5UnUvh3DmHLiahrjfB9YSk7UV583XONvNA/0';
-                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364158&idx=1&sn=f54c0a568423497ee767bad5a0c60ceb#rd';
-                    $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
-                    */
                 break;
-
                 case 'c':
-                    /*
-                    $msgType = 'news';
-                    $ArticleCount = 1;
-                    $Title = '诺基亚X系列—体验流畅的跨界体验，就拥有 Nokia X吧！';
-                    $Description = '诺基亚X，带你领略独一无二的跨界风潮~';
-                    $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9GOicmHGkn9fFGBUzswuevIXqPYZJKzQLwYTt44De6WDCKAeddheicGAvw/0';
-                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364160&idx=1&sn=7990df46e08cffa61db45a3f4f76bb7c#rd';
-                    $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
-                    */
                     $Articles = array(
                         array(
                             'title' => '诺基亚XL 4G 跨界而来',
@@ -188,16 +159,12 @@ class IndexAction extends Action {
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
-                    /*
-                    $msgType = 'news';
-                    $ArticleCount = 1;
-                    $Title = '实用经典系列—诺基亚301，让你精彩多多，乐趣多多。';
-                    $Description = '拥有大气简约的诺基亚301， 感受丰富智能的拍摄功能~';
-                    $PicUrl = 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euu6GnjhbtPheLIMPC7FQ9GQ23hhIITicXLcX6Nf4umPGVibX90icJAPKNlJSF6ribNp6cp5bzBiaqb3oQ/0';
-                    $Url = 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200364164&idx=1&sn=1ef6debcf590d0e54947f5df88b09fbe#rd';
-                    $resultStr = sprintf($textNews_one, $fromUsername, $toUsername, $time, $msgType, $ArticleCount, $Title, $Description, $PicUrl, $Url);
-                    */
                 break;
+
+                case 'e':
+                    $content = "小诺为大家整理了目前热门畅销机型，直接输入以下产品型号即可查看产品信息\n●LUMIA 638\n●LUMIA1520\n●诺基亚X\n●诺基亚XL4G\n●诺基亚503\n●诺基亚1080\n●诺基亚225\n●诺基亚630";
+                    $this -> responseText($toUsername, $fromUsername, $content);
+                    break;
 
                 case '2':
                     $msgType = 'news';
@@ -298,6 +265,22 @@ class IndexAction extends Action {
             $nouse = M('Key') -> where('openID = ""') -> count();
             $this -> show('<h3>激活码已用：<span style="color: blue;">' . $use . '</span> 条，未用：<span style="color:red;">' . $nouse . '</span> 条</h3>');
         }
+
+
+    //回复文本消息
+    public function responseText($toUserName, $fromUserName, $content){
+        $textTpl = "<xml>
+                    <ToUserName><![CDATA[%s]]></ToUserName>
+                    <FromUserName><![CDATA[%s]]></FromUserName>
+                    <CreateTime>%s</CreateTime>
+                    <MsgType><![CDATA[%s]]></MsgType>
+                    <Content><![CDATA[%s]]></Content>
+                    <FuncFlag>0</FuncFlag>
+                    </xml>";
+        $resultStr = sprintf($textTpl, $fromUserName, $toUserName, time(), 'text', $content);
+        echo $resultStr;
+        exit;
+    }
 
     //回复图文消息
     public function responseNews($toUserName, $fromUserName, $Articles){
