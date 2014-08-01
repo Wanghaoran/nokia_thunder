@@ -227,9 +227,6 @@ class IndexAction extends Action {
                 case 'x':
                 case 'nokia x':
                 case '诺基亚x':
-                $content = "小诺为大家整理了目前热门畅销机型，直接输入以下产品型号即可查看产品信息\n●LUMIA 638\n●LUMIA1520\n●诺基亚X\n●诺基亚XL4G\n●诺基亚503\n●诺基亚1080\n●诺基亚225\n●诺基亚630";
-                $this -> responseText($toUsername, $fromUsername, $content);
-                    /*
                     $Articles = array(
                         array(
                             'title' => ' 诺基亚 X 快速开启 Android应用',
@@ -245,7 +242,6 @@ class IndexAction extends Action {
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
-                    */
                     break;
 
                 case '我是帮友':
