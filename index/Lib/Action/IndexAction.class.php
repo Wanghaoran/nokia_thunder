@@ -187,7 +187,7 @@ class IndexAction extends Action {
                     break;
 
                 case '638':
-                case 'LUMIA638':
+                case 'lumia638':
                     $Articles = array(
                         array(
                             'title' => '诺基亚LUMIA638 4G',
