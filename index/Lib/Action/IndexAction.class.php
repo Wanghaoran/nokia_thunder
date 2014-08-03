@@ -162,7 +162,7 @@ class IndexAction extends Action {
                 break;
 
                 case 'e':
-                    $content = "小诺为大家整理了目前热门畅销机型，直接输入以下产品型号即可查看产品信息\n●LUMIA 638\n●LUMIA1520\n●诺基亚X\n●诺基亚XL4G\n●诺基亚503\n●诺基亚1080\n●诺基亚225\n●诺基亚630";
+                    $content = "小诺为大家整理了目前热门畅销机型，直接输入以下产品型号即可查看产品信息\n●LUMIA 638\n●LUMIA 1520\n●诺基亚X\n●诺基亚XL4G\n●诺基亚503\n●诺基亚1080\n●诺基亚225\n●LUMIA 630";
                     $this -> responseText($toUsername, $fromUsername, $content);
                     break;
 
