@@ -477,8 +477,14 @@ class IndexAction extends Action {
 
         //有效扫描总次数
         $total = $WechatSourceStatistical -> sum('key1+key2');
-        echo $WechatSourceStatistical -> getLastSql();
-        dump($total);
+        //用户扫描后关注总次数
+        $key1_total = $WechatSourceStatistical -> sum('key1');
+        //已关注用户扫描总次数
+        $key2_total = $total - $key1_total;
+        $this -> assign('total', $total);
+        $this -> assign('key1_total', $key1_total);
+        $this -> assign('key2_total', $key2_total);
+
 
         $this -> display();
     }

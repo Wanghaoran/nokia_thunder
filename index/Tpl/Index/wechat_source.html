@@ -12,8 +12,18 @@
 
 <body>
 
-<div class="page-header" style="margin-bottom: 50px;">
+<div class="page-header">
     <h1>微信来源数据统计<small> Wechat Source Statistical</small></h1>
+</div>
+
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">数据总计</h3>
+    </div>
+    <div class="panel-body">
+        <p>有效扫描总次数：<span class="label label-success"><-{$total|default=0}-></span> 次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户扫描后关注总次数：<span class="label label-primary"><-{$key1_total|default=0}-></span> 次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已关注用户扫描总次数：<span class="label label-primary"><-{$key2_total|default=0}-></span> 次</p>
+
+    </div>
 </div>
 
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
