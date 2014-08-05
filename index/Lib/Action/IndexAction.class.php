@@ -16,6 +16,9 @@ class IndexAction extends Action {
         $MsgType = strval($postObj -> MsgType);
         //消息类型
         $Event = $postObj->Event;
+
+        $EventKey = $postObj -> EventKey;
+
         //返回消息模版
         $textTpl = "<xml>
                     <ToUserName><![CDATA[%s]]></ToUserName>
@@ -386,6 +389,16 @@ class IndexAction extends Action {
             echo $resultStr;
         //相反为事件推送
         }else{
+
+            if(!empty($EventKey)){
+                $content = "-{$EventKey}-";
+                $this -> responseText($toUsername, $fromUsername, $content);
+                exit();
+            }
+
+
+
+
             //取消订阅事件不处理
             if($Event == 'unsubscribe'){
                 echo '';
@@ -417,6 +430,7 @@ class IndexAction extends Action {
 
             $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
             echo $resultStr;
+            exit();
         }
     }
 
