@@ -390,11 +390,13 @@ class IndexAction extends Action {
         //相反为事件推送
         }else{
 
+            /*
             if(!empty($EventKey)){
                 $content = "-{$EventKey}-";
                 $this -> responseText($toUsername, $fromUsername, $content);
                 exit();
             }
+            */
 
 
 
