@@ -454,15 +454,25 @@ class IndexAction extends Action {
         $WechatSourceStatistical = M('WechatSourceStatistical');
         $da_arr = array();
         $da_arr[] = date('Y-m-d');
+        $key1_arr[] = 0;
+        $key2_arr[] = 0;
         //生成日期数组，每次减少1天
         for($i=1; $i < 10; $i++){
             $da_arr[] = date('Y-m-d', strtotime("-{$i} day"));
+            $key1_arr[] = 0;
+            $key2_arr[] = 0;
         }
         $this -> assign('da_arr', json_encode(array_reverse($da_arr)));
         //根据日期数组查询结果
         $result = $WechatSourceStatistical -> where(array('date' => array('IN', $da_arr))) -> select();
-        echo $WechatSourceStatistical -> getLastSql();
-        dump($result);
+        foreach($result as $value){
+            if($key = array_search($value['date'], $da_arr)){
+                $key1_arr[$key] = $value['key1'];
+                $key2_arr[$key] = $value['key2'];
+            }
+        }
+        dump($key1_arr);
+        dump($key2_arr);
         $this -> display();
     }
 
