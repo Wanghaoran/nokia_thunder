@@ -450,6 +450,22 @@ class IndexAction extends Action {
             $this -> show('<h3>激活码已用：<span style="color: blue;">' . $use . '</span> 条，未用：<span style="color:red;">' . $nouse . '</span> 条</h3>');
         }
 
+    public function wechat_source(){
+        $WechatSourceStatistical = M('WechatSourceStatistical');
+        $da_arr = array();
+        $da_arr[] = date('Y-m-d');
+        //生成日期数组，每次减少1天
+        for($i=1; $i < 10; $i++){
+            $da_arr[] = date('Y-m-d', strtotime("-{$i} day"));
+        }
+        $this -> assign('da_arr', json_encode(array_reverse($da_arr)));
+        //根据日期数组查询结果
+        $result = $WechatSourceStatistical -> where(array('date' => array('IN', $da_arr))) -> select();
+        echo $WechatSourceStatistical -> getLastSql();
+        dump($result);
+        $this -> display();
+    }
+
 
     //回复文本消息
     public function responseText($toUserName, $fromUserName, $content){
