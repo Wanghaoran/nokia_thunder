@@ -465,8 +465,6 @@ class IndexAction extends Action {
         $this -> assign('da_arr', json_encode(array_reverse($da_arr)));
         //根据日期数组查询结果
         $result = $WechatSourceStatistical -> where(array('date' => array('IN', $da_arr))) -> select();
-        dump($da_arr);
-        dump($result);
         foreach($result as $value){
             $key = array_search($value['date'], $da_arr);
             if($key !== false){
@@ -474,8 +472,9 @@ class IndexAction extends Action {
                 $key2_arr[$key] = $value['key2'];
             }
         }
-        dump($key1_arr);
-        dump($key2_arr);
+        $this -> assign('key1_arr', json_encode(array_reverse($key1_arr)));
+        $this -> assign('key2_arr', json_encode(array_reverse($key2_arr)));
+
         $this -> display();
     }
 
