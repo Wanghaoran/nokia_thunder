@@ -475,6 +475,11 @@ class IndexAction extends Action {
         $this -> assign('key1_arr', json_encode(array_reverse($key1_arr)));
         $this -> assign('key2_arr', json_encode(array_reverse($key2_arr)));
 
+        //有效扫描总次数
+        $total = $WechatSourceStatistical -> sum('key1+key2');
+        echo $WechatSourceStatistical -> getLastSql();
+        dump($total);
+
         $this -> display();
     }
 
