@@ -468,8 +468,8 @@ class IndexAction extends Action {
         dump($da_arr);
         dump($result);
         foreach($result as $value){
-            if($key = array_search($value['date'], $da_arr)){
-                dump($key);
+            $key = array_search($value['date'], $da_arr);
+            if($key !== false){
                 $key1_arr[$key] = $value['key1'];
                 $key2_arr[$key] = $value['key2'];
             }
