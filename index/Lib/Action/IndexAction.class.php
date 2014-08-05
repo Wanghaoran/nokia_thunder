@@ -390,13 +390,21 @@ class IndexAction extends Action {
         //相反为事件推送
         }else{
 
-            /*
+
+            //如果有事件Key值，说明扫描了带参二维码
             if(!empty($EventKey)){
-                $content = "-{$EventKey}-";
-                $this -> responseText($toUsername, $fromUsername, $content);
-                exit();
+                $WechatSourceStatistica = D('WechatSourceStatistica');
+                //用户扫描后关注
+                if($Event == 'subscribe'){
+                    $re = $WechatSourceStatistica -> addnum(1);
+                //用户已关注扫描
+                }else if($Event == 'SCAN'){
+                    $re = $WechatSourceStatistica -> addnum(2);
+                }
+//                $this -> responseText($toUsername, $fromUsername, $content);
+//                exit();
             }
-            */
+
 
 
 
