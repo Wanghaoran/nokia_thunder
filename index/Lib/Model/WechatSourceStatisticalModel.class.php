@@ -1,5 +1,5 @@
 <?php
-class WechatSourceStatisticaModel extends Model {
+class WechatSourceStatisticalModel extends Model {
 
 
     public function addnum($type){
