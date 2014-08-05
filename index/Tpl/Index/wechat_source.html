@@ -27,12 +27,14 @@
 </div>
 
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-<div id="main" style="height:400px"></div>
+<div id="main" style="height:500px;margin-bottom: 30px;" ></div>
+<div id="main2" style="height:400px"></div>
 <!-- ECharts单文件引入 -->
 <script src="http://echarts.baidu.com/build/echarts-plain.js"></script>
 <script type="text/javascript">
     // 基于准备好的dom，初始化echarts图表
     var myChart = echarts.init(document.getElementById('main'));
+    var myChart2 = echarts.init(document.getElementById('main2'));
 
     var da_arr = eval('<-{$da_arr}->');
     var key1_arr = eval('<-{$key1_arr}->');
@@ -114,6 +116,49 @@
 
     // 为echarts对象加载数据
     myChart.setOption(option);
+
+    option2 = {
+        title : {
+            text: '微信来源数据占比',
+            subtext: '总数据占比',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'vertical',
+            x : 'left',
+            data:['已关注扫描数','未关注扫描后关注数']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '60%'],
+                data:[
+                    {value:'<-{$key1_total|default=0}->', name:'已关注扫描数'},
+                    {value:'<-{$key2_total|default=0}->', name:'未关注扫描后关注数'},
+                ]
+            }
+        ]
+    };
+
+    myChart2.setOption(option2);
+
+
 </script>
 </body>
 </html>
