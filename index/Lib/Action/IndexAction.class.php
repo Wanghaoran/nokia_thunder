@@ -390,6 +390,23 @@ class IndexAction extends Action {
         //相反为事件推送
         }else{
 
+            //菜单点击
+            if($Event == 'CLICK'){
+                switch($EventKey){
+                    case 'NOWS':
+                        $Articles = array(
+                            array(
+                                'title' => 'Lumia930震撼上市 让你悦然心动',
+                                'description' => '一脉相承、高端体验、彰显个性，所有的所有都让你悦然心动 这就是Lumia930',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Eu770snUpkAsFlukoibFD6UFfuEOZibQQuLNfSDDoofzM8AQ8jaKeyIsGqoV98S7l4IEPLkQqAbeWZA/640',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200928289&idx=1&sn=48e3b5b131998d1c921a1bf85a1707f0#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
+                }
+            }
+
 
             //如果有事件Key值，说明扫描了带参二维码
             if(!empty($EventKey)){
@@ -401,13 +418,7 @@ class IndexAction extends Action {
                 }else if($Event == 'SCAN'){
                     $re = $WechatSourceStatistical -> addnum(2);
                 }
-//                $this -> responseText($toUsername, $fromUsername, $content);
-//                exit();
             }
-
-
-
-
 
             //取消订阅事件不处理
             if($Event == 'unsubscribe'){
@@ -436,6 +447,8 @@ class IndexAction extends Action {
                     $contentStr = "感谢你关注诺基亚官方微信~想获得你感兴趣的相关诺基亚讯息，可以直接回复小诺1. 热销机型；2. 精彩应用推荐；3.缤纷活动。轻松找到最对你口味的消息哦~也可直接点击屏幕下方，查询更多有意思的内容~";
                 }
             }
+
+
 
 
             $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
