@@ -368,9 +368,13 @@ class IndexAction extends Action {
 
                     $result = json_decode($return, true);
 
+                    if($result['state'] == 'error'){
+                        $contentStr = '您还未参加此活动，点击菜单缤纷活动－拉帮皆友一起享参加吧！';
+                    }else{
+                        $contentStr = "已经有 " . $result['sum'] . " 人通过你的二维码购买了产品\n你帮友的排名是：第 " . $result['rank'] . " 名";
+                    }
 
                     $msgType = 'text';
-                    $contentStr = "活动还未上线，敬请期待。。。" . $result['state'];
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                     break;
 
