@@ -349,8 +349,28 @@ class IndexAction extends Action {
                     break;
 
                 case '我是帮友':
+
+                    $uri = "http://182.92.64.207/nokia_share/index/getuserdate";
+                    // 参数数组
+                    $data = array (
+                        'openid' => strval($fromUsername),
+                        'type' => 'wechat',
+                    );
+
+                    $ch = curl_init ();
+                    curl_setopt ( $ch, CURLOPT_URL, $uri );
+                    curl_setopt ( $ch, CURLOPT_POST, 1 );
+                    curl_setopt ( $ch, CURLOPT_HEADER, 0 );
+                    curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
+                    curl_setopt ( $ch, CURLOPT_POSTFIELDS, $data );
+                    $return = curl_exec ( $ch );
+                    curl_close ( $ch );
+
+                    $result = json_decode($return, true);
+
+
                     $msgType = 'text';
-                    $contentStr = "活动还未上线，敬请期待。。。";
+                    $contentStr = "活动还未上线，敬请期待。。。" . $result['state'];
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                     break;
 
