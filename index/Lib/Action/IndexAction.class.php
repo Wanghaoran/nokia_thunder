@@ -440,6 +440,30 @@ class IndexAction extends Action {
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
+
+                    case 'PLACE':
+                        $Articles = array(
+                            array(
+                                'title' => 'Lumia930带你「看」国家地理',
+                                'description' => '这是我们用Lumia拍摄世界七大自然奇景的第一站，由美国国家地理杂志摄影师Stephen Alvarez带队前往尼泊尔，用Lumia 930和Lumia 1520来拍摄珠穆朗玛峰的壮丽景观。',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJaaNn2NKzSsnicPduHtDE6kBNOQaicTk1qK8YGAM0keoNRwx0UdrI7lwg/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201114534&idx=1&sn=0c9580b976a288b222dc17cd9e15cf49#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
+
+                    case 'CORTANA':
+                        $Articles = array(
+                            array(
+                                'title' => 'Cortana小课堂 | 方便你的生活',
+                                'description' => '有了小娜，你是不是发现平日的生活方便了不少？她会记录下你的点点滴滴，成为你必不可少的好朋友而今天，Corta',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJAkbUd4PSP0bLXntibH25PMYM1mMibIIj3WPaoOicFgu8oEZXa2qDR6FvA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201115349&idx=1&sn=b6b21509c6a80b271da32e192f2dbf60#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
                 }
             }
 
