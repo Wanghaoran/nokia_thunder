@@ -464,6 +464,42 @@ class IndexAction extends Action {
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
+
+                    case 'GAME':
+                        $Articles = array(
+                            array(
+                                'title' => '创意小游戏 | 乐趣停不住',
+                                'description' => '贪吃蛇又回来了！机智的小诺通过「Lumia530」的动态磁贴原景重现了这个经典画面，玩过这个游戏的诺粉请回复',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJX2z2zoq0IxGcdhLQhqPziaKs8b6C7xbHpUkiaZRRoE1lcXGbotY39HFQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201114664&idx=1&sn=ddb5fce3b96f57b8f8e75ed879fcd839#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
+
+                    case 'TIPS':
+                        $Articles = array(
+                            array(
+                                'title' => ' WP系统Tips | 小诺让你更会玩 ',
+                                'description' => '你是不是有时觉得自己的手机不够个性？你是不是想在朋友圈中炫一把？你是不是追求个性的年轻人？如果以上你都是，那',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJe1aHICCkshjrrx3ATa488x8hafHCehJaykDC3yL8zicgSyLvmEuNSHA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201114705&idx=1&sn=88c188c00afc22532ae6145041f45537#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
+
+                    case 'APP':
+                        $Articles = array(
+                            array(
+                                'title' => ' 好用又好玩的APP们',
+                                'description' => '#下厨房#在下厨房的帮助下，用双手让菜肴变得美味可口吧~在分类大全中，可快速寻找到食材，与之有关的所有做法都',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJOic0jcs4bnb3jnicXEI0BUAhLCoVXGGaMU0JyRXrtVSaRzFgmPDuTEFQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201115431&idx=1&sn=0a7af39d5b3801a6c54f45ed7b4ebb76#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
                 }
             }
 
