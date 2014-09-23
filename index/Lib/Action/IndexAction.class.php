@@ -428,6 +428,18 @@ class IndexAction extends Action {
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
+
+                    case 'SMART':
+                        $Articles = array(
+                            array(
+                                'title' => 'Lumia930&smart合体记',
+                                'description' => '带上你的耳机，点击视频选择超清画质，一起来感受下来自现场的原汁原味。',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJmQ3IQwlf2k8KmdPf7x5rrbB4hYqFLl6yVibiaOD7HsOQD0QAicBEuu9mQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201114440&idx=1&sn=381e56295052276323fc7a9f4072d453#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
                 }
             }
 
