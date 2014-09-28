@@ -149,16 +149,16 @@ class IndexAction extends Action {
                 case 'd':
                     $Articles = array(
                         array(
-                            'title' => '诺基亚225 双卡双待',
+                            'title' => '诺基亚130 双卡双待',
                             'description' => '',
-                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/a7.jpg',
-                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=1&sn=18401294f13527b96b11bf9466901236#rd',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvCYSjpDQaxHlMvKsZAbibntoHKuPoJQWNq8jOnt6oibsHERNIJQ1icw61AbR27crM8xM3HmhrTaK6xQ/0',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201148771&idx=1&sn=96fca66a1139e5e07b4c00c89df10650#rd',
                         ),
                         array(
                             'title' => '参数配置',
                             'description' => '',
-                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/a8.jpg',
-                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806722&idx=2&sn=af1039cbd1ac640032389fd3d3b05c97#rd',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/a17.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201148771&idx=2&sn=4e91869460f17de6450e6b4abb3547c5#rd',
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
@@ -283,6 +283,25 @@ class IndexAction extends Action {
                             'description' => '',
                             'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/a4.jpg',
                             'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200806717&idx=2&sn=40e03a269aa412720896d2c4b9c8a6b3#rd',
+                        ),
+                    );
+                    $this -> responseNews($toUsername, $fromUsername, $Articles);
+                    break;
+
+                case '130':
+                case '诺基亚130':
+                    $Articles = array(
+                        array(
+                            'title' => '诺基亚130 双卡双待',
+                            'description' => '',
+                            'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvCYSjpDQaxHlMvKsZAbibntoHKuPoJQWNq8jOnt6oibsHERNIJQ1icw61AbR27crM8xM3HmhrTaK6xQ/0',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201148771&idx=1&sn=96fca66a1139e5e07b4c00c89df10650#rd',
+                        ),
+                        array(
+                            'title' => '参数配置',
+                            'description' => '',
+                            'picurl' => 'http:/42.121.116.205/nokia_wechat/Public/images/a17.jpg',
+                            'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201148771&idx=2&sn=4e91869460f17de6450e6b4abb3547c5#rd',
                         ),
                     );
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
@@ -480,10 +499,16 @@ class IndexAction extends Action {
                     case 'TIPS':
                         $Articles = array(
                             array(
-                                'title' => ' WP系统Tips | 小诺让你更会玩 ',
-                                'description' => '你是不是有时觉得自己的手机不够个性？你是不是想在朋友圈中炫一把？你是不是追求个性的年轻人？如果以上你都是，那',
-                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJe1aHICCkshjrrx3ATa488x8hafHCehJaykDC3yL8zicgSyLvmEuNSHA/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201114705&idx=1&sn=88c188c00afc22532ae6145041f45537#rd',
+                                'title' => 'WP系统Tips | 个性化你的主屏幕',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvCYSjpDQaxHlMvKsZAbibntkB9JAjooPvlQxibiae881e1zzPSlEkjYj0aQrmyl8T8VFwX6TQq3pJCg/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201147597&idx=1&sn=97f6440e8900f7297ea11078bfcaf87c#rd',
+                            ),
+                            array(
+                                'title' => 'WP系统Tips | 更懂你的舒服法',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvCYSjpDQaxHlMvKsZAbibntyEfhaycHca4EVGicu5otVVBHuKMX0nWWNYKlFMianSyjNur4eic7sJZYw/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201147597&idx=2&sn=0b0ff4e16be6b359e66b8854532e84c3#rd',
                             ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
@@ -492,9 +517,9 @@ class IndexAction extends Action {
                     case 'APP':
                         $Articles = array(
                             array(
-                                'title' => ' 好用又好玩的APP们',
-                                'description' => '#下厨房#在下厨房的帮助下，用双手让菜肴变得美味可口吧~在分类大全中，可快速寻找到食材，与之有关的所有做法都',
-                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EvfQ3MUgkBsabQZeyb8zyGJOic0jcs4bnb3jnicXEI0BUAhLCoVXGGaMU0JyRXrtVSaRzFgmPDuTEFQ/0',
+                                'title' => ' 好用又好玩的APP们-国庆特辑',
+                                'description' => '国庆假期怎么过？除了吃喝玩乐以外，好用又好玩的APP们肯定也少不了，现在就跟着小诺的步伐来看看【好用又好玩的APP们-国庆特辑】让这个假期乐趣无限',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvCYSjpDQaxHlMvKsZAbibntzcfw31ytuoqntjUM1YrLFOVaibPmuoJicMWdiaXBVlyep9AcialCOr7vfQ/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201115431&idx=1&sn=0a7af39d5b3801a6c54f45ed7b4ebb76#rd',
                             ),
                         );
