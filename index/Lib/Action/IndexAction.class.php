@@ -505,7 +505,7 @@ class IndexAction extends Action {
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201147597&idx=1&sn=97f6440e8900f7297ea11078bfcaf87c#rd',
                             ),
                             array(
-                                'title' => 'WP系统Tips | 更懂你的舒服法',
+                                'title' => 'WP系统Tips | 更懂你的输入法',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvCYSjpDQaxHlMvKsZAbibntyEfhaycHca4EVGicu5otVVBHuKMX0nWWNYKlFMianSyjNur4eic7sJZYw/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201147597&idx=2&sn=0b0ff4e16be6b359e66b8854532e84c3#rd',
