@@ -525,6 +525,18 @@ class IndexAction extends Action {
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
+
+                    case 'BUAUTLY':
+                        $Articles = array(
+                            array(
+                                'title' => ' ​Cortana来了！你准备好偶遇美女光圈人了么？',
+                                'description' => '从今天开始，京城将会惊现一背包客，他带着神秘的光圈人去北京城各大知名地点，与大家一起互动，你准备好偶遇美女光圈人了么？',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EuvKz4OBpb3oICavJOzonmLGrjc15fS6tVa2ic2RvXzKYhWib4zhINMOtDtJTEGoBAA17YJP4a7zyog/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201225078&idx=1&sn=1938a165e777162df4bf6d5045ee2cbe#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
                 }
             }
 
