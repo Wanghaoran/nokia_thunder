@@ -529,10 +529,16 @@ class IndexAction extends Action {
                     case 'BUAUTLY':
                         $Articles = array(
                             array(
-                                'title' => ' ​Cortana来了！你准备好偶遇美女光圈人了么？',
-                                'description' => '从今天开始，京城将会惊现一背包客，他带着神秘的光圈人去北京城各大知名地点，与大家一起互动，你准备好偶遇美女光圈人了么？',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EuvKz4OBpb3oICavJOzonmLGrjc15fS6tVa2ic2RvXzKYhWib4zhINMOtDtJTEGoBAA17YJP4a7zyog/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201225078&idx=1&sn=1938a165e777162df4bf6d5045ee2cbe#rd',
+                                'title' => '​Cortana来了！你准备好偶遇美女光圈人了么？',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Eu0qhibPTjMJtQWekWayA5w4vxbhUzuE9hAiaMZQZPQWOgRliaWibd81s3yRKtF02BIsYqBTx9MZTXxJA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201244974&idx=1&sn=c047ead10bf2836d2554996eb6d048cd#rd',
+                            ),
+                            array(
+                                'title' => '邂逅美女光圈人，携手进入智能语音新时代',
+                                'description' => '',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9Eu0qhibPTjMJtQWekWayA5w4jLeHG2NlDrljftkfH9dM7Yia2kygSic1LRhREx0mwCVq6DR3FKFrwMOQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201244974&idx=2&sn=ba50924bacad985358ee66a63c91b9e2#rd',
                             ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
