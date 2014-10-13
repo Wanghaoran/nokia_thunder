@@ -529,7 +529,7 @@ class IndexAction extends Action {
                     case 'BUAUTLY':
                         $Articles = array(
                             array(
-                                'title' => ' ​Cortana来了！美女光圈人带你游京城 ？',
+                                'title' => ' ​Cortana来了！美女光圈人带你游京城',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euicpg5cYQrPGUtib2LF4VhkXo1nz8NTqBpmW7uzpjHuql3yQkCnSIwEyBCSkD9xv9fmcVdUV5LPib3w/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201244974&idx=1&sn=c047ead10bf2836d2554996eb6d048cd#rd',
