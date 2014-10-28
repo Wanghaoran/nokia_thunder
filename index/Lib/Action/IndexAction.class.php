@@ -543,6 +543,18 @@ class IndexAction extends Action {
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
+
+                    case 'DAILY':
+                        $Articles = array(
+                            array(
+                                'title' => '小娜与你的日常',
+                                'description' => '当小娜来到你的身边，你们会产生什么火花？当小娜成为了你的朋友，你们的生活会是什么样？来点击视频，告诉你小娜到底有多机智',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Esr1bfAFJ4OQjlUY6nmP14iaWm8frBvlhGLjtZ0WkOzPDY1ibj6krMFq0XAKje9lEppKqXeLMIm96qA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201421908&idx=1&sn=80242081b8bbd9f126957cf194597f51#rd',
+                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
                 }
             }
 
