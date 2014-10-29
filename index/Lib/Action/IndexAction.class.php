@@ -439,10 +439,16 @@ class IndexAction extends Action {
                     case 'NOWS':
                         $Articles = array(
                             array(
-                                'title' => 'Lumia930震撼上市 让你悦然心动',
-                                'description' => '一脉相承、高端体验、彰显个性，所有的所有都让你悦然心动 这就是Lumia930',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Eu770snUpkAsFlukoibFD6UFfuEOZibQQuLNfSDDoofzM8AQ8jaKeyIsGqoV98S7l4IEPLkQqAbeWZA/640',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=200928289&idx=1&sn=48e3b5b131998d1c921a1bf85a1707f0#rd',
+                                'title' => 'Lumia830-第一款内置Cortana的Lumia智能手机',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2ygx5kCI3fL6FABQ7BROIlLagMC4OrvsqImVEpRa1B8FQeicCbsQq5qw/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201456916&idx=1&sn=1ccb62c81172d06fb69254783d524c2e#rd',
+                            ),
+                            array(
+                                'title' => '参数配置',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2p0X80vBrkPla9QibtVR0pibM6KIHsAjzk4ibPQA3vGSXZFIPFtdZwplTw/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201456916&idx=2&sn=e0b3bf23b23012b435e58c79461e2da6#rd',
                             ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
@@ -547,10 +553,16 @@ class IndexAction extends Action {
                     case 'DAILY':
                         $Articles = array(
                             array(
-                                'title' => '小娜与你的日常',
-                                'description' => '当小娜来到你的身边，你们会产生什么火花？当小娜成为了你的朋友，你们的生活会是什么样？来点击视频，告诉你小娜到底有多机智',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Esr1bfAFJ4OQjlUY6nmP14iaWm8frBvlhGLjtZ0WkOzPDY1ibj6krMFq0XAKje9lEppKqXeLMIm96qA/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201421908&idx=1&sn=80242081b8bbd9f126957cf194597f51#rd',
+                                'title' => '小娜视频三部曲！她能为你做什么？进来就知道！',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2muzbG9DdkgicCDyEibHCPjX3URT7yvY9AgSQdtOYpogdSicZXIGerj7TA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
+                            ),
+                            array(
+                                'title' => '教你用小娜搞定魔鬼教师',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2yPzQ8MB1YaLoncT51Xq39EuDDSib1oXickSDhIkH1XAbqmpEBUia5t1BA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=2&sn=bec8e21a650f0948f4510f38ec5bfcb8#rd',
                             ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
