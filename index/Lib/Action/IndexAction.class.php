@@ -559,7 +559,7 @@ class IndexAction extends Action {
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
                             ),
                             array(
-                                'title' => '教你用小娜搞定魔鬼教师',
+                                'title' => '学生党的福音！用Lumia830帮你搞定魔鬼教师！',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2yPzQ8MB1YaLoncT51Xq39EuDDSib1oXickSDhIkH1XAbqmpEBUia5t1BA/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=2&sn=bec8e21a650f0948f4510f38ec5bfcb8#rd',
