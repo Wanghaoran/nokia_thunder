@@ -564,6 +564,12 @@ class IndexAction extends Action {
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2yPzQ8MB1YaLoncT51Xq39EuDDSib1oXickSDhIkH1XAbqmpEBUia5t1BA/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=2&sn=bec8e21a650f0948f4510f38ec5bfcb8#rd',
                             ),
+                            array(
+                                'title' => '职场好伙伴！看Lumia830如何让心情瞬间变美丽',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtFW0BC7vLnsCyq4JMiaWwCt0nKtlRVHnjuIb5IRndWFSVqwGnR8k19KvL6P9jicKX5mZBsVPUu6lxw/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=3&sn=c323faceb5ced3beb8c2f9a24c54865c#rd',
+                            ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
