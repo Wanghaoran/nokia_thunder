@@ -570,6 +570,12 @@ class IndexAction extends Action {
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtFW0BC7vLnsCyq4JMiaWwCt0nKtlRVHnjuIb5IRndWFSVqwGnR8k19KvL6P9jicKX5mZBsVPUu6lxw/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=3&sn=c323faceb5ced3beb8c2f9a24c54865c#rd',
                             ),
+                            array(
+                                'title' => '谁能征服中国大妈？请看Lumia830！',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvaHrIibZRfiaR8eKosj8uXN4y3EhaRJgYGdLZt8BMwJnJYzMFwqlzR5A25sfvb7URGy8nLUICo8l7w/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=4&sn=d963b92786c505d32a6293051451fe4a#rd',
+                            ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
