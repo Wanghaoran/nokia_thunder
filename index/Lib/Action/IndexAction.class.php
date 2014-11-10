@@ -576,6 +576,12 @@ class IndexAction extends Action {
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvaHrIibZRfiaR8eKosj8uXN4y3EhaRJgYGdLZt8BMwJnJYzMFwqlzR5A25sfvb7URGy8nLUICo8l7w/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=4&sn=d963b92786c505d32a6293051451fe4a#rd',
                             ),
+                            array(
+                                'title' => ' 智能语音时代来袭，你的专属智能助理Cortana',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvHUQLM0ogOoGgpqGm9Wia52xf3rIwG0t6gHD6GFZhdDn5icepTldd9fCbMVw2Eh1Du08NeQRdVLSsg/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=5&sn=55e7ef624e7a961f66d832bbe8a49f68#rd',
+                            ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
