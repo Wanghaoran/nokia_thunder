@@ -439,16 +439,16 @@ class IndexAction extends Action {
                     case 'NOWS':
                         $Articles = array(
                             array(
-                                'title' => 'Lumia830-第一款内置Cortana的Lumia智能手机',
+                                'title' => '超值Lumia体验，微软“智”造 — Lumia 535双卡双待 ',
                                 'description' => '',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2ygx5kCI3fL6FABQ7BROIlLagMC4OrvsqImVEpRa1B8FQeicCbsQq5qw/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201456916&idx=1&sn=1ccb62c81172d06fb69254783d524c2e#rd',
+                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9EtqVicXq6QJtR4S83m3OERTXCyuJpkEBHFNoVoyI5upTz3WUECxvYBiaIruico1vVGAc4X8CH1WGA1MQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201784871&idx=1&sn=201b4cd7b4b33214602d0a654fbbeac0#rd',
                             ),
                             array(
                                 'title' => '参数配置',
                                 'description' => '',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2p0X80vBrkPla9QibtVR0pibM6KIHsAjzk4ibPQA3vGSXZFIPFtdZwplTw/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201456916&idx=2&sn=e0b3bf23b23012b435e58c79461e2da6#rd',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtqVicXq6QJtR4S83m3OERTX4se6LUCSvs0ib9qWWlSFT6aSu959ic7icbth6oCyalkyWo4H03X8AjpPA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201784871&idx=2&sn=c0c87be108d570a57f1bccef31722753#rd',
                             ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
@@ -553,9 +553,9 @@ class IndexAction extends Action {
                     case 'DAILY':
                         $Articles = array(
                             array(
-                                'title' => '小娜视频三部曲！她能为你做什么？进来就知道！',
+                                'title' => '看王自健如何舌战小娜',
                                 'description' => '',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2muzbG9DdkgicCDyEibHCPjX3URT7yvY9AgSQdtOYpogdSicZXIGerj7TA/0',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtqVicXq6QJtR4S83m3OERTXeYAMv9iazVf3xPVicCm3HXcTXQbwiasLdS7zicHdibdhiaNV5DGR4JObJ8wA/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
                             ),
                             array(
@@ -582,6 +582,13 @@ class IndexAction extends Action {
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvHUQLM0ogOoGgpqGm9Wia52xf3rIwG0t6gHD6GFZhdDn5icepTldd9fCbMVw2Eh1Du08NeQRdVLSsg/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=5&sn=55e7ef624e7a961f66d832bbe8a49f68#rd',
                             ),
+                            array(
+                                'title' => '小娜视频三部曲！她能为你做什么？进来就知道！',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2muzbG9DdkgicCDyEibHCPjX3URT7yvY9AgSQdtOYpogdSicZXIGerj7TA/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
+                            ),
+
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
                         break;
