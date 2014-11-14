@@ -537,14 +537,8 @@ class IndexAction extends Action {
                             array(
                                 'title' => ' ​Cortana来了！美女光圈人带你游京城',
                                 'description' => '',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Euicpg5cYQrPGUtib2LF4VhkXo1nz8NTqBpmW7uzpjHuql3yQkCnSIwEyBCSkD9xv9fmcVdUV5LPib3w/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201244974&idx=1&sn=c047ead10bf2836d2554996eb6d048cd#rd',
-                            ),
-                            array(
-                                'title' => '邂逅美女光圈人，携手进入智能语音新时代',
-                                'description' => '',
-                                'picurl' => 'https://mmbiz.qlogo.cn/mmbiz/3RdqPmGN9Euicpg5cYQrPGUtib2LF4VhkXqh9lJKW0vonmGuMnapzpR4psznPlnIENDcCTGhrGiaJSh1eefDWFDZA/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201244974&idx=2&sn=ba50924bacad985358ee66a63c91b9e2#rd',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Etz6GENljzmq7Ohic7Xh2wbNarM2c2TEsTFFJpt1YKxaoibwIiamhw6tSaiapcRb2oLKrsevf8KxjB9Eg/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796161&idx=1&sn=8e3a397570f06688d122540f0f017138#rd',
                             ),
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
@@ -574,13 +568,13 @@ class IndexAction extends Action {
                                 'title' => '谁能征服中国大妈？请看Lumia830！',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvaHrIibZRfiaR8eKosj8uXN4y3EhaRJgYGdLZt8BMwJnJYzMFwqlzR5A25sfvb7URGy8nLUICo8l7w/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=4&sn=d963b92786c505d32a6293051451fe4a#rd',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=5&sn=d52d96c0960891c87b126ab3c369362b#rd',
                             ),
                             array(
-                                'title' => ' 智能语音时代来袭，你的专属智能助理Cortana',
+                                'title' => '邂逅美女光圈人，携手进入智能语音新时代 ',
                                 'description' => '',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvHUQLM0ogOoGgpqGm9Wia52xf3rIwG0t6gHD6GFZhdDn5icepTldd9fCbMVw2Eh1Du08NeQRdVLSsg/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=5&sn=55e7ef624e7a961f66d832bbe8a49f68#rd',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9Etz6GENljzmq7Ohic7Xh2wbNl7pkdzichT6sQTAqNu1ZibJyEkBSHReyFiabnW1tfibANXIFUNG7SkK5FQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
                             ),
                             array(
                                 'title' => '小娜视频三部曲！她能为你做什么？进来就知道！',
@@ -588,6 +582,13 @@ class IndexAction extends Action {
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2muzbG9DdkgicCDyEibHCPjX3URT7yvY9AgSQdtOYpogdSicZXIGerj7TA/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
                             ),
+                            array(
+                                'title' => ' 智能语音时代来袭，你的专属智能助理Cortana',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvHUQLM0ogOoGgpqGm9Wia52xf3rIwG0t6gHD6GFZhdDn5icepTldd9fCbMVw2Eh1Du08NeQRdVLSsg/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=5&sn=55e7ef624e7a961f66d832bbe8a49f68#rd',
+                            ),
+
 
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
