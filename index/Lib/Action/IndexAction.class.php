@@ -547,7 +547,7 @@ class IndexAction extends Action {
                     case 'DAILY':
                         $Articles = array(
                             array(
-                                'title' => '看王自健如何舌战小娜',
+                                'title' => '看小娜如何舌战王自健',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtqVicXq6QJtR4S83m3OERTXeYAMv9iazVf3xPVicCm3HXcTXQbwiasLdS7zicHdibdhiaNV5DGR4JObJ8wA/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
@@ -587,6 +587,12 @@ class IndexAction extends Action {
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvHUQLM0ogOoGgpqGm9Wia52xf3rIwG0t6gHD6GFZhdDn5icepTldd9fCbMVw2Eh1Du08NeQRdVLSsg/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=5&sn=55e7ef624e7a961f66d832bbe8a49f68#rd',
+                            ),
+                            array(
+                                'title' => ' 看治愈系小娜如何安慰光棍徐强',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtVebaest8G9oZUK3iagibgUibJibVfUdAAibibTDBfSvDzSib6fSbDD8LPVxqxZdq7sZvRdmaiaNEj8JTuXQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=8&sn=faf7b93e87e4da2fca6b36154286b8d9#rd',
                             ),
 
 
