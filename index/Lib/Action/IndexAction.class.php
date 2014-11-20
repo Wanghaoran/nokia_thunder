@@ -547,12 +547,6 @@ class IndexAction extends Action {
                     case 'DAILY':
                         $Articles = array(
                             array(
-                                'title' => '看小娜如何舌战王自健',
-                                'description' => '',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtqVicXq6QJtR4S83m3OERTXeYAMv9iazVf3xPVicCm3HXcTXQbwiasLdS7zicHdibdhiaNV5DGR4JObJ8wA/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201455218&idx=1&sn=abad1fe0ada60188bae3a85bfc909184#rd',
-                            ),
-                            array(
                                 'title' => '学生党的福音！用Lumia830帮你搞定魔鬼教师！',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtmDRN2alIX05zR37e1qjS2yPzQ8MB1YaLoncT51Xq39EuDDSib1oXickSDhIkH1XAbqmpEBUia5t1BA/0',
@@ -588,13 +582,30 @@ class IndexAction extends Action {
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EvHUQLM0ogOoGgpqGm9Wia52xf3rIwG0t6gHD6GFZhdDn5icepTldd9fCbMVw2Eh1Du08NeQRdVLSsg/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=7&sn=93b0659a9b04341974d0ec0242c2ad02#rd',
                             ),
-                            array(
-                                'title' => ' 看治愈系小娜如何安慰光棍徐强',
-                                'description' => '',
-                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtVebaest8G9oZUK3iagibgUibJibVfUdAAibibTDBfSvDzSib6fSbDD8LPVxqxZdq7sZvRdmaiaNEj8JTuXQ/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=8&sn=faf7b93e87e4da2fca6b36154286b8d9#rd',
-                            ),
+                        );
+                        $this -> responseNews($toUsername, $fromUsername, $Articles);
+                        break;
 
+                    case 'LUMIASHOW':
+                        $Articles = array(
+                            array(
+                                'title' => 'Lumia脱口秀：看小娜如何舌战王自健',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EsM9bZYtMr3I3voPFQGDoIpZkiatYV0cbul5CMVVv5RUbeQaQqZ0Qpqh0ibCWWeqicII8yBYxFDrUu0g/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=1&sn=56f33954f8eab592938d183eeb84994d#rd',
+                            ),
+                            array(
+                                'title' => 'Lumia脱口秀：看治愈系小娜如何安慰光棍徐强',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EsM9bZYtMr3I3voPFQGDoIpdvZBXQrqp8w6CNfmTJOM6ErXTmMSD8HbhUZIWc1ZjyiaiaKBPTQCfn1Q/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=2&sn=26cac628e94620d81af319260366590a#rd',
+                            ),
+                            array(
+                                'title' => 'Lumia脱口秀：小娜VS脱口秀小王爷 第二集',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EsM9bZYtMr3I3voPFQGDoIpHHtGKsU6AlbVEj3cC7zKdBAD2aQ8bX8qMUWVIGW5LiarBicuiaCsq3UKQ/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=3&sn=053deecb11b4ca6449a1ede454c9c9b5#rd',
+                            ),
 
                         );
                         $this -> responseNews($toUsername, $fromUsername, $Articles);
