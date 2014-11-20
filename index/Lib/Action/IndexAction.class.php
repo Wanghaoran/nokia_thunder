@@ -592,19 +592,19 @@ class IndexAction extends Action {
                                 'title' => 'Lumia脱口秀：看小娜如何舌战王自健',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EsM9bZYtMr3I3voPFQGDoIpZkiatYV0cbul5CMVVv5RUbeQaQqZ0Qpqh0ibCWWeqicII8yBYxFDrUu0g/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=1&sn=56f33954f8eab592938d183eeb84994d#rd',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201952772&idx=1&sn=232da8ff70c7a79914366dfc185b9d7f#rd',
                             ),
                             array(
                                 'title' => 'Lumia脱口秀：看治愈系小娜如何安慰光棍徐强',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EsM9bZYtMr3I3voPFQGDoIpdvZBXQrqp8w6CNfmTJOM6ErXTmMSD8HbhUZIWc1ZjyiaiaKBPTQCfn1Q/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=2&sn=26cac628e94620d81af319260366590a#rd',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201952772&idx=2&sn=5a9320dd602b311b36c8ead004232e53#rd',
                             ),
                             array(
-                                'title' => 'Lumia脱口秀：小娜VS脱口秀小王爷 第二集',
+                                'title' => ' Lumia脱口秀：小娜VS脱口秀小王爷 第二集',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EsM9bZYtMr3I3voPFQGDoIpHHtGKsU6AlbVEj3cC7zKdBAD2aQ8bX8qMUWVIGW5LiarBicuiaCsq3UKQ/0',
-                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201796124&idx=3&sn=053deecb11b4ca6449a1ede454c9c9b5#rd',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201952772&idx=3&sn=37001618c73f76e13f2066a306387b0f#rd',
                             ),
 
                         );
