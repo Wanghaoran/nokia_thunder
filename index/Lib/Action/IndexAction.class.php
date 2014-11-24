@@ -601,10 +601,16 @@ class IndexAction extends Action {
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201952772&idx=2&sn=5a9320dd602b311b36c8ead004232e53#rd',
                             ),
                             array(
-                                'title' => ' Lumia脱口秀：小娜VS脱口秀小王爷 第二集',
+                                'title' => 'Lumia脱口秀：小娜VS脱口秀小王爷 第二集',
                                 'description' => '',
                                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EsM9bZYtMr3I3voPFQGDoIpHHtGKsU6AlbVEj3cC7zKdBAD2aQ8bX8qMUWVIGW5LiarBicuiaCsq3UKQ/0',
                                 'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201952772&idx=3&sn=37001618c73f76e13f2066a306387b0f#rd',
+                            ),
+                            array(
+                                'title' => 'Lumia脱口秀：小娜给吃货徐强来支招',
+                                'description' => '',
+                                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/3RdqPmGN9EtFknyR2nKr8qo6Dt92g6dQQydEFlQp8ka6ibWPkSXc9dX8oWx9fQcgIGIq10UmcfejEZgiaO5uH0ag/0',
+                                'url' => 'http://mp.weixin.qq.com/s?__biz=MjM5Mjk2MjA0MA==&mid=201952772&idx=4&sn=2af0dcac1578cd125e995c968ca75a16#rd',
                             ),
 
                         );
