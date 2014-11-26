@@ -367,10 +367,6 @@ class IndexAction extends Action {
                     $this -> responseNews($toUsername, $fromUsername, $Articles);
                     break;
 
-                case 'datang':
-                    $this -> responseText($toUsername, $fromUsername, $fromUsername);
-                    break;
-
                 case '我是帮友':
 
                     $uri = "http://182.92.64.207/nokia_share/index/getuserdate";
